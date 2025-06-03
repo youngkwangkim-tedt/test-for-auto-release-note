@@ -10,12 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Create Tag
-        id: create_tag
-        run: |
-          VERSION=$(jq -r .version package.json)
-          git tag -a "v$VERSION" -m "Release v$VERSION"
-          git push origin "v$VERSION"
       - uses: release-drafter/release-drafter@v6
         with:
           config-name: release-drafter.yml

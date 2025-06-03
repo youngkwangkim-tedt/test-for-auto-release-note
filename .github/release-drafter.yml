@@ -1,5 +1,5 @@
-name-template: 'v$PREVIOUS_TAG'
-tag-template: 'v$PREVIOUS_TAG'
+name-template: $PREVIOUS_TAG
+tag-template: $PREVIOUS_TAG
 categories:
   - title: '変更履歴'
 exclude-labels:

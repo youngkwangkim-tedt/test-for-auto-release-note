@@ -1,8 +1,7 @@
 name: Create Release Note
 on:
   push:
-    tags:
-        - "v*.*.*"
+    branches: [main]
 jobs:
   release-draft:
     permissions:

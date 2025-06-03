@@ -13,7 +13,3 @@ footer: |
   ## 🌱 すべての変更点
 
   https://github.com/$OWNER/$REPOSITORY/compare/$PREVIOUS_TAG...v$RESOLVED_VERSION
-version-resolver: |
-  # バージョンを自動的に解決するスクリプト
-  # 例: package.jsonからバージョンを取得する場合
-  jq -r .version package.json

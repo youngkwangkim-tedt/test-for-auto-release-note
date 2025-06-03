@@ -9,7 +9,6 @@ change-title-escapes: '\<*_&'
 template: |
   $CHANGES
 footer: |
-prerelease: false
 
   ## 🌱 すべての変更点
 

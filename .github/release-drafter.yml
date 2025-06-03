@@ -1,4 +1,4 @@
-name-template: 'v$RESOLVED_VERSION'
+name-template: '$GITHUB_REF'
 tag-template: 'v$RESOLVED_VERSION'
 categories:
   - title: '変更履歴'

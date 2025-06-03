@@ -6,14 +6,6 @@ exclude-labels:
   - 'ignore-for-release-note'
 change-template: '- $TITLE @$AUTHOR (#$NUMBER)'
 change-title-escapes: '\<*_&'
-version-resolver:
-  major:
-    labels:
-      - 'major'
-  minor:
-    labels:
-      - 'minor'
-  default: patch
 template: |
   $CHANGES
 footer: |

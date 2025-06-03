@@ -17,3 +17,9 @@ jobs:
           commitish: ${{ github.ref }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Publish Release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          latest_release=$(gh release list --limit 1 --json tagName --jq '.[0].tagName')
+          gh release create "$latest_release" --draft=false --notes-file release-notes.md

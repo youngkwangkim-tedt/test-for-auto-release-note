@@ -7,9 +7,10 @@ exclude-labels:
 change-template: '- $TITLE @$AUTHOR (#$NUMBER)'
 change-title-escapes: '\<*_&'
 template: |
+  ##Commit 履歴
   $CHANGES
 footer: |
 
-  ## 🌱 すべての変更点
+  ##すべての変更点
 
   https://github.com/$OWNER/$REPOSITORY/compare/$PREVIOUS_TAG...v$RESOLVED_VERSION

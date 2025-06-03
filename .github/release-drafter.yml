@@ -1,6 +1,5 @@
 name-template: 'v$RESOLVED_VERSION'
 tag-template: 'v$RESOLVED_VERSION'
-tag-prefix: static-tag-prefix-v
 categories:
   - title: '変更履歴'
 exclude-labels:
@@ -10,6 +9,7 @@ change-title-escapes: '\<*_&'
 template: |
   $CHANGES
 footer: |
+prerelease: false
 
   ## 🌱 すべての変更点
 
